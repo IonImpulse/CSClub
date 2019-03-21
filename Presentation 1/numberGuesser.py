@@ -16,11 +16,12 @@ while solved == False :
     choice = int(input())
 
     if choice == 1 :
-        guessReserve = guessReserve/2
-        guess = guess + math.ceil(guessReserve)
+        guessReserve = math.ceil(guessReserve/2)
+        guess = guess + guessReserve
     elif choice == 2 :
-        guessReserve = guessReserve/2
-        guess = guess - math.ceil(guessReserve)
+        guessReserve = math.ceil(guessReserve/2)
+        guess = guess - guessReserve
     elif choice == 3 :
-        print("Yay! " + str(guess) + " is your number!")
         solved = True
+
+print("Yay! " + str(guess) + " is your number!")

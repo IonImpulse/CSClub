@@ -16,10 +16,10 @@ while solved == False :
     choice = int(input())
 
     if choice == 1 :
-        guessReserve = math.ceil(guessReserve/2)
+        guessReserve = round(guessReserve/2,0)
         guess = guess + guessReserve
     elif choice == 2 :
-        guessReserve = math.ceil(guessReserve/2)
+        guessReserve = round(guessReserve/2,0)
         guess = guess - guessReserve
     elif choice == 3 :
         solved = True

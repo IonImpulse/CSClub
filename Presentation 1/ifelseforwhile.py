@@ -24,3 +24,9 @@ for i in range(10) :
 
 while fizz != 5 :
     fizz = fizz + 1
+
+if fizz and foo == 10 :
+    fizz = 5
+
+if fizz or foo = 10 :
+    foo = 5
